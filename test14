@@ -1,0 +1,3 @@
+Changes done so far : 
+1. Existing workflow have query list but it didn't have condition to retrieve item from sharepoint workflow task list 
+2. data is not parse according to requirement. 
