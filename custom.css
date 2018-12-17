@@ -146,11 +146,12 @@ img.img-circle:hover {
 #BtnTop:hover {
   background-color: #555;
 }
+/*Search Fix*/
 .ms-srch-sbLarge input[type="text"]{
 width:inherit;
 	    margin-bottom: 0px;
 }
-
+/*Search Fix*/
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
