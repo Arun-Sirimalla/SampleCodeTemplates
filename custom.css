@@ -186,4 +186,7 @@ width:inherit;
 button {
     min-width: 3em;
     }
+#srchIcon{
+	color:#fff;
+}
 /*End search*/
