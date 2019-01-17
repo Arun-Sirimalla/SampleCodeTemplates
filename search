@@ -1,0 +1,46 @@
+<div class="input-group">
+                                                <!-- <label>
+                                                <span class="screen-reader-text">Search for:
+
+
+
+                                            
+                                                
+                                                </span>
+                                                
+                                                <input id="search-input" type="search" name="s" value="" placeholder="Search ..." class="search-field"/>
+                                            </label>
+                                            <button id="search-submit" class="search-submit" type="submit">
+                                                <i class="fa fa-lg fa-search">
+                                                </i>
+                                            </button>-->
+                                                <input id="search-input" type="search" name="s" value="" placeholder="Search ..." class="search-field" />
+                                                <div class="input-group-btn">
+                                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        <span class="caret">
+                                                        </span>
+                                                    </button>
+                                                    <a href="#btnSiteLevelSearch" id="srchIcon" class="btn btn-info">
+                                                        <i class="fa fa-lg fa-search">
+                                                        </i>
+                                                    </a>
+                                                    <ul class="dropdown-menu dropdown-menu-right">
+                                                        <li>
+                                                            <a href="#btnSiteLevelSearch">Search1
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#btnCollectionLevelSearch">Search2
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
