@@ -1,0 +1,44 @@
+ <div class="icon-box" id="pageownersdiv">
+                                                <h4 class="icon-box__title" style="    color: white !important;">Page Owner
+                                                </h4>
+                                                <div id="pageowners">
+                                                    <span class="icon-box__subtitle">
+                                                        <i class="fa fa-user">
+                                                        </i>
+													info@wisconsin.com                                                                                                                                                                                                                                                                    </span>
+                                                </div>
+                                            </div>
+-----
+function getPageOwners()
+{
+getItems("/_api/web/lists/getbytitle('Pages')/items("+_spPageContextInfo.pageItemId+")?$select=Owner/Title,*&$expand=Owner").then(function(data){
+
+console.log(data)
+html='';
+owners='';
+
+//$.each(data.d.results, function( index, value ) {
+value=data.d;
+if(value.Owner.Title!="")
+{
+
+html+='<span class="icon-box__subtitle"><i class="fa fa-user">  </i> '+value.Owner.Title+' </span> <br/>';
+owners+='<a href="#"><i class="fa fa fa-user"></i>'+value.Owner.Title+'</a>';
+}
+//});
+
+$("#pageowners").html(html); // Top Footer
+//$(".footer-siteOwner").append(html.replace("<br/>","")); // bottom footer
+}, function(err) { 
+$("#pageownersdiv").hide();
+})
+}
+-----
+CSS--
+/*search box*/
+
+.ms-InlineSearch-SearchBox-Baseline:focus
+{
+	
+	background:none!important;
+}
