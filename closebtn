@@ -1,0 +1,4 @@
+.js-callout-closeButton {
+    width: 29px;
+    height: 29px;
+}
