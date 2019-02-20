@@ -1,0 +1,16 @@
+Issue is with width of the anchor tag and putting some margin from right .
+
+.ms-contextmenu-link{
+	
+	margin-left:-4px !important;
+	 padding-right: 0px !important; 
+	     width: 104%;
+	
+	
+	
+	 // pageTitle
+	    var x=document.title;
+	var pgtitle=x.substring(x.indexOf('-')+1);
+	pgtitle=pgtitle.replace("Pages","");
+	
+    $("#pageTitle").text(pgtitle);
