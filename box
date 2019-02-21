@@ -1,0 +1,74 @@
+ <style>
+        #box tr {
+            border: 1px solid;
+            font-size: 15px;
+        }
+        #box td {
+            padding: 10px;
+        }
+        #box table {
+            margin: 0 auto;
+            width: 300px;
+        }
+    </style>
+    <div class="container" id="box">
+        <div class="row">
+            <div class="col-lg-4">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-lg-4">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+            <div class="col-lg-4">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                        <tr>
+                            <td>Bhavani Dinakaran</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
