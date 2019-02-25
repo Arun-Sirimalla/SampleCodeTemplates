@@ -1,0 +1,42 @@
+﻿.customborder{
+	border:3px solid red;/*#1f425d;*/
+		margin-bottom:10px;
+		
+		
+}
+.contentDiv
+{
+	padding-top:20px;
+	
+}
+/*left padding bullets*/
+#leftColumn ul
+{
+	
+	    margin-left: 15px!important;
+	    /*margin-left: 35px!important;*/
+
+}
+#leftColumn a{
+	display:block;
+	
+}
+#leftColumn a:hover {
+    background-color: #DDDDDD;
+}
+/*Bullet fix*/
+#leftColumn span a {
+    display: inline-block;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	line-height:1!important;
+}
+/**/
+blockquote{
+	font-size:inherit!important;
+}
+#DeltaPlaceHolderMain
+{
+	    margin-top: 25px;
+}
