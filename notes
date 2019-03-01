@@ -1,0 +1,116 @@
+1.Text over image:(update in leftside bar.css)
+.customborder{
+	border:3px solid brown!important;/*#1f425d;*/
+		margin-bottom:10px;
+		
+		
+}
+.contentDiv
+{
+	padding-top:20px;
+	
+}
+/*left padding bullets*/
+#leftColumn ul
+{
+	
+	    margin-left: 15px!important;
+	    /*margin-left: 35px!important;*/
+
+}
+#leftColumn a{
+	display:block;
+	
+}
+#leftColumn a:hover {
+    background-color: #DDDDDD;
+}
+/*Bullet fix*/
+#leftColumn span a {
+    display: inline-block;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	line-height:1!important;
+	    margin: 0 !important;
+    padding: 0 !important;
+}
+/**/
+blockquote{
+	font-size:inherit!important;
+}
+#DeltaPlaceHolderMain
+{
+	    margin-top: 25px;
+}
+
+.watermarkDiv:before {
+content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url('https://i81.sharepoint.com/sites/ilab/SiteAssets/rose.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   opacity: 0.5;
+}
+
+.watermarkDiv {
+position:relative;
+}
+
+.watermarkDiv .content {
+position:relative;
+z-index:2;
+text-align:center
+}
+------------------------------------------------------
+2.Paragraph tag messup:
+Un comment these lines in custom.css(
+/*layout spacing*/
+ 
+/*.ms-rtestate-field p{
+margin:0px!important;
+}*/
+/*add recently
+.ms-rtestate-field h3 {
+    line-height: 0!important;
+}
+
+.h1, .h2, .h3, h1, h2, h3{
+margin-top: 0px!important;
+    margin-bottom: 10px!important;
+}*/
+
+.js-callout-closeButton {
+    width: 29px;
+    height: 29px;
+}
+
+
+.ms-contextmenu-link{
+	
+	margin-left:-4px !important;
+	 padding-right: 0px !important; 
+	     width: 104%;
+}
+
+)
+
+
+3.Global navigation fix:(update line number 92 in TopNavigation.js)
+var navNodeProps = hasChildren ? { "class": "dropdown-toggle disabled", "data-toggle": "dropdown", "role": "button", "aria-haspopup": "true", "aria-expanded": "false" } : {};
+
+4.update for responsiveness.
+<asp:Content ContentPlaceHolderId="PlaceHolderMain" runat="server">
+	<link href="/sites/ilab/_catalogs/masterpage/custom_masterpage0/css/style.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+
+
+
+
+
