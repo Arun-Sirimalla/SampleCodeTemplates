@@ -1,0 +1,26 @@
+.watermarkDiv:before    
+background-size: contain;
+
+    
+.watermarkDiv .content {
+text-align: right;
+
+
+
+<div class="imgcontainer">
+   <div class="content">
+      <h1>Heading</h1>
+      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+   </div>
+</div>​<br/>​<br/><br/>​<br/>​<br/><style>
+
+.imgcontainer<span id='ms-rterangeselectionplaceholder-start'></span><span id='ms-rterangeselectionplaceholder-end'></span>{
+   
+    background-image: url('https://i81.sharepoint.com/sites/ilab/SiteAssets/rose.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: left;
+   opacity: 0.5;
+}
+
+</style>​<br/>​
