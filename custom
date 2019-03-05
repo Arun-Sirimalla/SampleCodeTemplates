@@ -1,0 +1,4 @@
+/* Table Cell spacing
+.ms-rteTable-default > tbody > tr > td{
+padding:0px;
+} */
