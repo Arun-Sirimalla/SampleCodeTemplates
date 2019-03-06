@@ -1,0 +1,33 @@
+/*layout spacing*/
+ 
+/*.ms-rtestate-field p{
+margin:0px!important;
+}*/
+/*add recently
+.ms-rtestate-field h3 {
+    line-height: 0!important;
+}
+
+.h1, .h2, .h3, h1, h2, h3{
+margin-top: 0px!important;
+    margin-bottom: 10px!important;
+}*/
+
+.js-callout-closeButton {
+    width: 29px;
+    height: 29px;
+}
+
+
+.ms-contextmenu-link{
+	
+	margin-left:-4px !important;
+	 padding-right: 0px !important; 
+	     width: 104%;
+}
+/*fix table gap in IE*/
+.ms-rtestate-field > br{
+	display:none!important;
+}
+/*fix table gap in IE*/
+http://www.sharepointdiary.com/2016/12/sharepoint-online-powershell-to-export-term-set-to-csv.html
