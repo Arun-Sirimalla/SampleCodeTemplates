@@ -1,0 +1,15 @@
+<scripttype="text/javascript"src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<scripttype="text/javascript">
+$(document).ready(function(){
+var elem = document.getElementById("MSOZoneCell_WebPartWPQ2");
+           if(elem != null) {
+                var dummyevent = new Array();
+                dummyevent["target"] = elem;
+                dummyevent["srcElement"] = elem;
+                WpClick(dummyevent);
+                _ribbonStartInit("Ribbon.Browse", true)
+            }
+ });
+</script>
+https://www.zubairalexander.com/blog/missing-ribbon-in-sharepoint-online-or-sharepoint-on-premises-list/
+
