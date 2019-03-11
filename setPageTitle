@@ -6,9 +6,9 @@ function setPageTitle(){
 	 pgtitle=pgtitle.replace("Pages","");
 	 $("#pageTitle").text(pgtitle);	
 	}
-	else if(pageTitle.indexOf('Pages')>=0){
-	  pgtitle=pgtitle.replace("Pages","");
-	  $("#pageTitle").text(pgtitle);	
+	else if (pageTitle.indexOf('Pages')>=0){
+	  pageTitle=pageTitle.replace("Pages","");
+	  $("#pageTitle").text(pageTitle);	
 	}
 	else{
 		$("#pageTitle").text(pageTitle);	
