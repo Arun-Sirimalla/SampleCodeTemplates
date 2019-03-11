@@ -1,18 +1,23 @@
 function setPageTitle(){
+   debugger;
+   console.log("set Page title starts");
 	var pageTitle=document.title;
+	console.log(pageTitle)
 	var pgtitle=pageTitle.substring(pageTitle.indexOf('-')+1);
-	
+	console.log(pgtitle);
 	if(pageTitle.indexOf('-')>=0 && pageTitle.indexOf('Page')>=0){
+	 console.log("hiven and Pages word exist");
 	 pgtitle=pgtitle.replace("Pages","");
+	 console.log(pgtitle)
 	 $("#pageTitle").text(pgtitle);	
 	}
 	else if (pageTitle.indexOf('Pages')>=0){
+	console.log("Pages word exist");
 	  pageTitle=pageTitle.replace("Pages","");
 	  $("#pageTitle").text(pageTitle);	
 	}
 	else{
+	console.log("nothing exist");
 		$("#pageTitle").text(pageTitle);	
-	}
-   
-    
+	}   
 }
