@@ -1,0 +1,13 @@
+function setPageTitle(){
+	var pageTitle=document.title;
+	var pgtitle=pageTitle.substring(pageTitle.indexOf('-')+1);
+	if(pageTitle.indexOf('-')>=0 && pageTitle.indexOf('Page')>=0){
+	 pgtitle=pgtitle.replace("Pages","");
+	 $("#pageTitle").text(pgtitle);	
+	}
+	else{
+		$("#pageTitle").text(pageTitle);	
+	}
+   
+    
+}
