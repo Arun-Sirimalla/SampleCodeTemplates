@@ -1,0 +1,11 @@
+this is the code for page title 
+
+function setPageTitle(){
+	var pageTitle=document.title;
+	var pgtitle=pageTitle.substring(pageTitle.indexOf('-')+1);
+	if(pageTitle.indexOf('-')>=0){
+	 pgtitle=pgtitle.replace("Pages","");	
+	}
+   $("#pageTitle").text(pgtitle);
+    
+}
