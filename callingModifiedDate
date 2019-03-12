@@ -1,0 +1,17 @@
+SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function(){
+ getCurrentListItem(
+   function(listItem) {
+       var modifiedDate="";
+       var priority = listItem.get_item('Modified'); 
+      console.log("modified");
+      console.log(priority);
+       modifiedDate +='<span>'+ datetoISODate(new Date(priority))+'</span>';
+       $("#modifiedDate").html(modifiedDate);
+
+   },
+   function(sender,args){
+        console.log(args.get_message());    
+   }
+);
+
+});
