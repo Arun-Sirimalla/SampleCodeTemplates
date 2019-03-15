@@ -1,0 +1,29 @@
+function setPageTitle(){
+   debugger;
+   console.log("set Page title starts");
+	var pageTitle=document.title;
+	console.log(pageTitle)
+	//var pgtitle=pageTitle.substring(pageTitle.indexOf('-')+1);
+	//console.log(pageTitle);
+	if(pageTitle.indexOf('Pages -')>=0 ){
+	 console.log("Pages - hiven and Pages word exist");
+	 pageTitle=pageTitle.replace("Pages -","");
+	 console.log(pageTitle)
+	 $("#pageTitle").text(pageTitle);	//this to change page title in content
+	 $("title").text(pageTitle);//this to change page title at the top
+
+	}
+	else if (pageTitle.indexOf('Pages')>=0){
+	console.log("Pages word exist");
+	  pageTitle=pageTitle.replace("Pages","");
+	  $("#pageTitle").text(pageTitle);//this to change page title in content
+	   $("title").text(pageTitle);//this to change page title at the top
+	
+	}
+	else{
+	console.log("nothing exist");
+		$("#pageTitle").text(pageTitle);//this to change page title in content
+		 $("title").text(pageTitle);//this to change page title at the top
+	
+	}   
+}
