@@ -1,0 +1,68 @@
+<style>
+
+img.img-square:hover {
+    transform: scale(1.1 ,1);
+}
+</style>
+
+<div class="row">
+	<div class="col-lg-9">
+		<div  class="container" id="Dock">
+		
+		</div>
+	</div>
+</div>
+<script
+  src="/sites/T/SiteAssets/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+  function getListItems(listTitle, success, error) {
+        var context = SP.ClientContext.get_current();
+        var list = context.get_web().get_lists().getByTitle(listTitle);
+        var items = list.getItems(SP.CamlQuery.createAllItemsQuery());
+        context.load(items);
+        context.executeQueryAsync(
+           function () {
+               success(items);
+           },
+           error
+        );
+    }
+  $(document).ready(function () {
+    SP.SOD.executeFunc('sp.js', 'SP.ClientContext', function (){
+        getListItems('Dock',
+   function (items) {
+       var e = items.getEnumerator();
+       var html = '';
+       var count=0;
+       while (e.moveNext()) {
+           var item = e.get_current();
+          
+           if(count%3==0){
+               html+='<div class="row">';
+           }
+           count++;
+           console.log(item.get_item('FileLeafRef'));  //print File or Folder Name
+           console.log(item.get_item('FileRef')); //print File or Folder Url
+           html += '<div class="col-lg-4 col-xs-4 col-sm-4 intranetimg">'
+                              + '<a href="' + item.get_item('URL') + '" target="_blank">'
+                                  + '<img src="' +item.get_item('FileRef')  + '" class="img-square" alt="Cinque Terre" style="height: 120px;width: 340px;">'
+                              + '</a>'
+                          + '</div>';
+                       
+                       
+           if(count%3==0){html+='</div>';}
+
+       }
+       $('#Dock').html(html);
+   },
+   function (sender, args) {
+       console.log(args.get_message());
+   }
+   );
+    })
+   
+})
+</script>
