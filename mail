@@ -1,0 +1,22 @@
+Our requirement – 
+1.	Attachment should come in the approval email -  Implemented and tested
+2.	Approver name, comments and outcome should get updated in email and in the list – Implemented and tested.
+3.	We should get the list of approvers who has not taken action?
+
+By behavior, workflow approval completion process has got four criteria and we need to choose one. Below are the options.
+
+a.	Wait for all responses: The workflow will wait until all the responses have been collected. Outcome which received the most number of responses will be returned. In the event of a tie, the response that was received first will be returned. 
+We will not have any approver who has not taken any action as everybody needs to take an action.
+
+b.	Wait for first response: The workflow will wait until the first response is received and return the outcome of the first response then workflow will delete the approval tasks assigned to remaining approvers. Meaning it will take only the first response, that will be the final outcome of approval and others won’t be able to respond. This criterion will not let others to take action once after the first approver has taken the action. (This is implemented now which returns the name of approvers who has not taken any action)
+
+
+c.	Wait for specific response: The workflow will wait until the required outcome (Required Outcome) is received. All should agree to either approved or rejected to get the outcome. 
+
+d.	Wait for percentage of a response: The workflow will wait until a specified percentage (Required Percentage) of a particular outcome (Required Outcome) is received. If the required percentage is not achieved, then the default outcome will be returned. E.g. if we set 50%, and there are 10 approvers, then 5 approvers among 10 should approve the request then only it gets approved otherwise gets rejected. Once after it receives the required percentage of required outcome, it will not wait for remaining approvers to take action. (This is implemented now which returns the name of approvers who has not taken any action)
+
+
+
+
+
+
