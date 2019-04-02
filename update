@@ -74,7 +74,7 @@ table{font-family: Times New Roman;
 	<!--<img class="backdrop" src="https://wigov.sharepoint.com/sites/dot-dbm/bitsproj/WebParts/UniversalProjectTemplate/white.jpg" style="height:100%;width:100%;float:left;">
 	-->
 	<div>
-		<table id="tableProjects" style="width:100%;">
+		<table id="tableProjects" style="width:100%;table-layout: fixed;">
 			<thead>
 				<tr style="min-height:2px;">
 					<td colspan=6><hr style="display: block; border-style: solid; border-width: 1px;" /></td>
@@ -86,11 +86,11 @@ table{font-family: Times New Roman;
 					<td colspan=6><hr style="display: block; border-style: solid; border-width: 1px; border-color: rgb(129,0,0);"/></td>
 				</tr>
 				<tr style="min-height:10px;">
-					<td><h3 class="TableHeader" style="width:125px;">Project Name</h3></td>
+					<td><h3 class="TableHeader">Project Name</h3></td>
 					<td><h3 class="TableHeader">Project Objective</h3></td>
-					<td><h3 class="TableHeader" style="width:115px;">Project Manager</h3></td>
+					<td><h3 class="TableHeader">Project Manager</h3></td>
 					<td><h3 class="TableHeader"></h3></td>
-					<td><h3 class="TableHeader" style="width:100px;">Project Status</h3></td>
+					<td><h3 class="TableHeader">Project Status</h3></td>
 					<td><h3 class="TableHeader">Status As Of</h3></td>
 				</tr>
 				<tr style="min-height:10px;">
